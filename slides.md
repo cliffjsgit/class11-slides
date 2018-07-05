@@ -1,5 +1,5 @@
 ---
-title: 'Class 11: Chapter 19: The Goodies/Dependencies'
+title: 'Class 11: Chapter 19: The Goodies'
 separator: '\-\-\-\-\-'
 verticalSeparator: '\+\+\+\+\+'
 theme: 'moon'
@@ -10,15 +10,15 @@ revealOptions:
 ### ITSE-1402 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 11: Chapter 19: The Goodies/Dependencies</span>
 <br /><br />
-##### [https://z3r0.tech/slides-11](https://z3r0.tech/slides-11)
+##### [https://coder.run/1402-class11](https://coder.run/1402-class11)
 
 -----
 
-##### Chapter 19: The Goodies/Dependencies
+##### Chapter 19: The Goodies
 
 +++++
 
-[https://z3r0.tech/1402-chap19](https://z3r0.tech/1402-chap19)
+[https://coder.run/1402-chap19](https://coder.run/1402-chap19)
 
 +++++
 
@@ -600,13 +600,4 @@ When you are working with functions that have a large number of parameters, it i
 
 -----
 
-##### Appendix A: Debugging
-
-Note:
-You may have noticed that we skipped over the debugging section of each chapter. This was intentional.
-First of all, you have the book and if you were having issues I'd hope you look at it. Secondly, we have this whole section on debugging.. it's it's more of troubleshooting. Why not learn with examples?
-Let's crack open our books and look back at the a few of the debugging sections. We won't actually look through either appendix, but feel free to take a look on your own time. The debugging chapter is mostly common sense and the Algorythm Analysis chapter is more than you need to know at this point.
-
------
-
-Homework is 19.1 and extra credit is to do a CodeFights Challenge. 
+Homework is 19.1
