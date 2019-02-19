@@ -596,9 +596,9 @@ When you are working with functions that have a large number of parameters, it i
 
 +++++
 
-[bit.ly/1402-prettypython](bit.ly/1402-prettypython)
+[bit.ly/1402-prettypython](https://bit.ly/1402-prettypython)
 
-[bit.ly/1402-prettypython-notes](bit.ly/1402-prettypython-notes)
+[bit.ly/1402-prettypython-notes](https://bit.ly/1402-prettypython-notes)
 
 -----
 
