@@ -596,7 +596,8 @@ When you are working with functions that have a large number of parameters, it i
 
 +++++
 
-[https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/watch?v=OSGv2VnC0go)
+[bit.ly/1402-prettypython](bit.ly/1402-prettypython)  | [https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/watch?v=OSGv2VnC0go)
+[bit.ly/1402-prettypython-notes](bit.ly/1402-prettypython-notes) | [https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9)
 
 -----
 
