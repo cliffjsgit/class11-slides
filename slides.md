@@ -10,7 +10,7 @@ revealOptions:
 ### ITSE-1402 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 11: Chapter 19: The Goodies</span>
 <br /><br />
-##### [https://coder.run/1402-class11](https://coder.run/1402-class11)
+##### [https://bit.ly/1402-class11](https://bit.ly/1402-class11)
 
 -----
 
@@ -18,7 +18,7 @@ revealOptions:
 
 +++++
 
-[https://coder.run/1402-chap19](https://coder.run/1402-chap19)
+[https://bit.ly/1402-chap19](https://bit.ly/1402-chap19)
 
 +++++
 
