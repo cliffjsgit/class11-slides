@@ -7,18 +7,13 @@ revealOptions:
     transition: 'fade'
 ---
 
-### ITSE-1402 Intermediate Python
+### ITSE-1042 Intermediate Python
 <span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 11: Chapter 19: The Goodies / Web Frameworks</span>
 <br /><br />
-##### [https://bit.ly/1402-class11](https://bit.ly/1402-class11)
 
 -----
 
 ##### Chapter 19: The Goodies
-
-+++++
-
-[https://bit.ly/1402-chap19](https://bit.ly/1402-chap19)
 
 +++++
 
@@ -596,9 +591,16 @@ When you are working with functions that have a large number of parameters, it i
 
 +++++
 
-[bit.ly/1402-prettypython](https://bit.ly/1402-prettypython)
+### Transforming Code into Beautiful, Idiomatic Python 
+##### Raymond Hettinger's presentation and notes from PyCon US 2013 
 
-[bit.ly/1402-prettypython-notes](https://bit.ly/1402-prettypython-notes)
+Learn to take better advantage of Python's best features and improve existing code through a 
+series of code transformations, "When you see this, do that instead."
+
+[Video Presentation: https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/watch?v=OSGv2VnC0go)
+
+[Notes for Presentation: https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9)
+
 
 -----
 
@@ -606,7 +608,9 @@ When you are working with functions that have a large number of parameters, it i
 <br /><br /><br /><br /><br />
 ###### Content in part from https://www.fullstackpython.com. A great resource for information on web frameworks.
 
+
 +++++
+
 
 ### What is a web framework?
 
