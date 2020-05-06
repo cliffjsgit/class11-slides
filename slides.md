@@ -603,9 +603,9 @@ When you are working with functions that have a large number of parameters, it i
 Learn to take better advantage of Python's best features and improve existing code through a 
 series of code transformations, "When you see this, do that instead."
 
-[Video: https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/watch?v=OSGv2VnC0go)
+Video: [https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/watch?v=OSGv2VnC0go)
 
-[Notes: https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9)
+Notes: [https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9)
  
  
  
@@ -616,7 +616,7 @@ series of code transformations, "When you see this, do that instead."
 
 ## Django, Falcon, and Flask! Oh my! - An Overview of Full Stack
 <br /><br /><br /><br /><br />
-###### Content in part from https://www.fullstackpython.com. A great resource for information on web frameworks.
+###### Content in part from https://www.fullstackpython.com.  A great resource for information on web frameworks.
 
 
 
@@ -661,6 +661,10 @@ Frameworks like Flask and Falcon don't necessarily have a built-in ORM like Djan
 ### Django
 
 Django is a widely-used Python web application framework with a "batteries-included" philosophy. The principle behind batteries-included is that the common functionality for building web applications should come with the framework instead of as separate libraries.
+
+  
+
+Django Tutorial -  https://www.djangoproject.com/start/   
 
 +++++
 
