@@ -587,10 +587,13 @@ Without the scatter operator, the function would treat d as a single positional 
 
 +++++
 
+
 When you are working with functions that have a large number of parameters, it is often useful to create and pass around dictionaries that specify frequently used options.
  
  
 +++++
+
+
 
 
 
@@ -610,9 +613,11 @@ series of code transformations, "When you see this, do that instead."
 -----
 
 
+
 ## Django, Falcon, and Flask! Oh my! - An Overview of Full Stack
 <br /><br /><br /><br /><br />
 ###### Content in part from https://www.fullstackpython.com. A great resource for information on web frameworks.
+
 
 
 
