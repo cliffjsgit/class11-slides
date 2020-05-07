@@ -594,7 +594,7 @@ Note:
  
 +++++
 
-
+-----
 
 
 
@@ -609,12 +609,15 @@ Video: [https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/wat
 Notes: [https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9)
  
  
- 
+-----
+
+Homework is 19.1
 
 -----
 
+
 ## Using Python to Work With Excel Spreadsheets
-#### Python libraries for working with Excel spreadsheets 
+##### Python libraries for working with Excel spreadsheets 
 
 
 There are several Python libraries that are very useful for working with Excel spreadsheets. 
@@ -630,8 +633,9 @@ https://www.pyxll.com/blog/tools-for-working-with-excel-and-python/
 https://openpyxl.readthedocs.io/en/stable/tutorial.html  
 
 
++++++
 
-#### Example Python program to access and change an Excel spreadsheet
+##### Example Python program to access and change an Excel spreadsheet
 
 ```python
 import openpyxl
@@ -665,6 +669,8 @@ print('Save to example_copy.xlsx Done.')
 ```
 
 -----
+
+
 ## Django, Falcon, and Flask! Oh my! - An Overview of Full Stack
 <br /><br /><br /><br /><br />
 ###### Content in part from https://www.fullstackpython.com.  A great resource for information on web frameworks.
@@ -870,6 +876,4 @@ server {
 }
 ```
 
------
 
-Homework is 19.1
