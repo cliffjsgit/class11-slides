@@ -160,7 +160,7 @@ def only_upper(t):
 ```
 
 Note:
-List comprehensions are concise and easy to read, at least for simple expressions. And they are usually faster than the equivalent for loops, sometimes much faster.
+List comprehensions are concise and easy to read, at least for simple expressions. In addition, they are usually faster than the equivalent for loops, sometimes much faster.  
 List comprehensions are harder to debug because you can’t put a print statement inside the loop. You should only use them if the computation is simple enough that you are likely to get it right the first time.
 
 +++++
@@ -168,8 +168,8 @@ List comprehensions are harder to debug because you can’t put a print statemen
 ##### 19.3 Generator expressions
 
 +++++    
-    
-We can rewrite it using a list comprehension
+Generator expressions are similar to list comprehensions. However, they use parenthesis instead of square brakets.
+They are often used to iterate through a sequence of values, one value at a time. 
 
 ```python
 g = (x**2 for x in range(5))
@@ -185,10 +185,9 @@ for val in g:
 # 16
 ```
 
-Note:
-Generator expressions are similar to list comprehensions, but with parentheses instead of square brackets.
-The result is a generator object that knows how to iterate through a sequence of values. But unlike a list comprehension, it does not compute the values all at once; it waits to be asked. The built-in function next gets the next value from the generator.
-When you get to the end of the sequence, next raises a StopIteration exception. You can also use a for loop to iterate through the values.
+Note: 
+The **result is a generator object** that knows how to **iterate through a sequence of values**. But unlike a list comprehension, **it does not compute the values all at once**; it waits to be asked for the next vale. The built-in function next gets the next value from the generator.
+When you get to the **end of the sequence**, next raises a **StopIteration exception**. You can also use a for loop to iterate through the values.
 The generator object keeps track of where it is in the sequence, so the for loop picks up where next left off.
 
 +++++
@@ -217,8 +216,7 @@ But it is often used with generator expressions:
 any(letter == 't' for letter in 'monty')  # True
 ```
 
-Note:
-That example isn’t very useful because it does the same thing as the in operator. 
+Note: That example isn’t very useful because it does the same thing as the in operator. 
 
 +++++
 
@@ -230,12 +228,12 @@ def avoids(word, forbidden):
 ```
 
 Note:
-The function almost reads like English, “word avoids forbidden if there are not any forbidden letters in word.”
-Using any with a generator expression is efficient because it stops immediately if it finds a True value, so it doesn’t have to evaluate the whole sequence.
+The function almost reads like English, **“word avoids forbidden if there are not any forbidden letters in word**.”
+**Using any with a generator expression is efficient because it stops immediately if it finds a True value, so it doesn’t have to evaluate the whole sequence.**
 
 +++++
 
-Python provides another built-in function that works just like any, all, and returns True if every element of the sequence is True.
+Python provides another built-in function that works just like any, **all**, that **returns True if every element of the sequence is True**.
 
 +++++
 
@@ -255,12 +253,13 @@ def subtract(d1, d2):
 ```
 
 Note:
-The function written takes d1, which contains the words from the document as keys, and d2, which contains the list of words. It returns a dictionary that contains the keys from d1 that are not in d2.
-In all of these dictionaries, the values are None because we never use them. As a result, we waste some storage space.
+The function written **takes d1, which contains the words from the document as keys**, and **d2, which contains the list of words**. 
+It **returns a dictionary that contains the keys from d1 that are not in d2**.
+In all of these dictionaries, **the values are None because we never use them. As a result, we waste some storage space**.
 
 +++++
 
-Python provides another built-in type, called a set, that behaves like a collection of dictionary keys with no values. Adding elements to a set is fast; so is checking membership. And sets provide methods and operators to compute common set operations.
+**Python provides another built-in type, called a set, that behaves like a collection of dictionary keys with no values**. Adding elements to a set is fast; so is checking membership. And sets provide methods and operators to compute common set operations.
 
 ```python
 def subtract(d1, d2):
@@ -268,8 +267,8 @@ def subtract(d1, d2):
 ```
 
 Note:
-For example, set subtraction is available as a method called difference or as an operator, -. So we can rewrite subtract like this. 
-The result is a set instead of a dictionary, but for operations like iteration, the behavior is the same.
+For example, **set subtraction is available as a method called difference or as an operator, -**. So we can rewrite subtract like this. 
+**The result is a set instead of a dictionary, but for operations like iteration, the behavior is the same.
 
 +++++
 
@@ -286,11 +285,11 @@ def has_duplicates(t):
 ```
 
 Note:
-When an element appears for the first time, it is added to the dictionary. If the same element appears again, the function returns True.
+**When an element appears for the first time, it is added to the dictionary. If the same element appears again, the function returns True.**
 
 +++++
 
-Using sets, we can write the same function like this:
+**Using sets, we can write the same function** like this:
 
 ```python
 def has_duplicates(t):
@@ -298,7 +297,8 @@ def has_duplicates(t):
 ```
 
 Note:
-An element can only appear in a set once, so if an element in t appears more than once, the set will be smaller than t. If there are no duplicates, the set will be the same size as t.
+**An element can only appear in a set once, so if an element in t appears more than once, the set will be smaller than t.**
+If there are no duplicates, the set will be the same size as t.
 
 +++++
 
@@ -314,7 +314,7 @@ def uses_only(word, available):
 
 +++++
 
-uses_only checks whether all letters in word are in available. We can rewrite it like this:
+**uses_only checks whether all letters in word are in available.** We can rewrite it like this:
 
 ```python
 def uses_only(word, available):
@@ -322,7 +322,7 @@ def uses_only(word, available):
 ```
 
 Note:
-The <= operator checks whether one set is a subset or another, including the possibility that they are equal, which is true if all the letters in word appear in available.
+**The <= operator checks whether one set is a subset or another, including the possibility that they are equal, which is true if all the letters in word appear in available.**
 
 +++++
 
@@ -330,11 +330,11 @@ The <= operator checks whether one set is a subset or another, including the pos
 
 +++++
 
-A Counter is like a set, except that if an element appears more than once, the Counter keeps track of how many times it appears.
+**A Counter is like a set, except that if an element appears more than once, the Counter keeps track of how many times it appears.**
 
 +++++
 
-Counter is defined in a standard module called collections, so you have to import it. You can initialize a Counter with a string, list, or anything else that supports iteration:
+**Counter is defined in a standard module called collections, so you have to import it. You can initialize a Counter with a string, list, or anything else that supports iteration:**
 
 ```python
 from collections import Counter
@@ -345,7 +345,7 @@ count['d']
 ```
 
 Note:
-Counters behave like dictionaries in many ways; they map from each key to the number of times it appears. As in dictionaries, the keys have to be hashable.
+**Counters behave like dictionaries in many ways; they map from each key to the number of times it appears. As in dictionaries, the keys have to be hashable.**
 Unlike dictionaries, Counters don’t raise an exception if you access an element that doesn’t appear. Instead, they return 0:
 
 +++++
@@ -358,16 +358,16 @@ def is_anagram(word1, word2):
 ```
 
 Note:
-If two words are anagrams, they contain the same letters with the same counts, so their Counters are equivalent.
+**If two words are anagrams, they contain the same letters with the same counts, so their Counters are equivalent!**
 
 +++++
 
-Counters provide methods and operators to perform set-like operations, including addition, subtraction, union and intersection.
+**Counters provide methods and operators to perform set-like operations, including addition, subtraction, union and intersection.**
 
-```python`
+```python
 count = Counter('parrot')
 for val, freq in count.most_common(3):
-    print(val, freq)
+    print(val, freq) 
 # r 2
 # p 1
 # a 1
@@ -380,11 +380,11 @@ As seen here, they also provide an often-useful method, most_common, which retur
 
 ##### 19.7 defaultdict
 
-The collections module also provides defaultdict, which is like a dictionary except that if you access a key that doesn’t exist, it can generate a new value on the fly.
+The collections module also provides **defaultdict, which is like a dictionary except that if you access a key that doesn’t exist, it can generate a new value on the fly.**
 
 +++++
 
-When you create a defaultdict, you provide a function that’s used to create new values. The built-in functions that create lists, sets, and other types can be used as factories:
+**When you create a defaultdict, you provide a function that’s used to create new values. The built-in functions that create lists, sets, and other types can be used as factories:**
 
 ```python
 from collections import defaultdict
@@ -399,12 +399,12 @@ defaultdict(<class 'list'>, {'new key': ['new value']})
 
 Note:
 A factory is a function that produces objects.
-Notice that the argument is list, which is a class object, not list(), which is a new list. The function you provide doesn’t get called unless you access a key that doesn’t exist.
-If you are making a dictionary of lists, you can often write simpler code using defaultdict.
+**Notice that the argument is list, which is a class object, not list(), which is a new list. The function you provide doesn’t get called unless you access a key that doesn’t exist.
+If you are making a dictionary of lists, you can often write simpler code using defaultdict.**
 
 +++++
 
-This is an example of code that can be made simpler with defaultdict:
+**This is an example of code that can be made simpler with defaultdict:**
 
 ```python
 def all_anagrams(filename):
@@ -438,7 +438,7 @@ This solution has the drawback that it makes a new list every time, regardless o
 
 +++++
 
-We can avoid this problem and simplify the code using a defaultdict:
+**We can avoid this problem and simplify the code using a defaultdict:**
 
 ```python
 def all_anagrams(filename):
@@ -456,7 +456,7 @@ def all_anagrams(filename):
 
 +++++
 
-Many simple objects are basically collections of related values. For example, the Point object defined in Chapter 15 contains two numbers, x and y. 
+**Many simple objects are basically collections of related values. For example, the Point object defined in Chapter 15 contains two numbers, x and y.** 
 
 +++++
 
@@ -486,8 +486,8 @@ Point = namedtuple('Point', ['x', 'y'])
 ```
 
 Note:
-The first argument is the name of the class you want to create. The second is a list of the attributes Point objects should have, as strings. The return value from namedtuple is a class object.
-Point automatically provides methods like \_\_init\_\_ and \_\_str\_\_ so you don’t have to write them.
+**The first argument is the name of the class you want to create. The second is a list of the attributes Point objects should have, as strings. The return value from namedtuple is a class object.
+Creating a named tuble Point automatically provides methods like \_\_init\_\_ and \_\_str\_\_ so you don’t have to write them.**
 
 +++++ 
 
@@ -506,7 +506,7 @@ The init method assigns the arguments to attributes using the names you provided
 
 +++++
 
-You can access the elements of the named tuple by name or as a normal tuple.
+**You can access the elements of the named tuple by name or as a normal tuple.**
 
 ```python
 from collections import namedtuple
@@ -523,7 +523,7 @@ print((x, y))
 
 +++++
 
-Named tuples provide a quick way to define simple classes. The drawback is that simple classes don’t always stay simple. You might decide later that you want to add methods to a named tuple. In that case, you could define a new class that inherits from the named tuple:
+**Named tuples provide a quick way to define simple classes. The drawback is that simple classes don’t always stay simple.** You might decide later that you want to add methods to a named tuple. In that case, you could **define a new class that inherits from the named tuple:**
 
 ```python
 class Pointier(Point):
@@ -556,7 +556,7 @@ But the * operator doesn’t gather keyword arguments.
 
 +++++
 
-To gather keyword arguments, you can use the ** operator:
+**To gather keyword arguments, you can use the ** operator:**
 
 ```python
 def printall(*args, **kwargs):
@@ -565,14 +565,15 @@ printall(1, 2.0, third='3')
 # (1, 2.0) {'third': '3'}
 ```
 
-You can call the keyword gathering parameter anything you want, but kwargs is a common choice. The result is a dictionary that maps keywords to values
+**You can call the keyword gathering parameter anything you want, but kwargs is a common choice. The result is a dictionary that maps keywords to values.**
 
 +++++
 
-If you have a dictionary of keywords and values, you can use the scatter operator, ** to call a function:
+**If you have a dictionary of keywords and values, you can use the scatter operator, ** to call a function:**
 
 ```python
 d = dict(x=1, y=2)
+
 Point(**d)
 # Point(x=1, y=2)
 d = dict(x=1, y=2)
@@ -583,12 +584,12 @@ Point(d)
 ```
 
 Note:
-Without the scatter operator, the function would treat d as a single positional argument, so it would assign d to x and complain because there’s nothing to assign to y.
+**Without the scatter operator, the function would treat d as a single positional argument, so it would assign d to x and complain because there’s nothing to assign to y.**
 
 +++++
 
 
-When you are working with functions that have a large number of parameters, it is often useful to create and pass around dictionaries that specify frequently used options.
+**When you are working with functions that have a large number of parameters, it is often useful to create and pass around dictionaries that specify frequently used options.**
  
  
 +++++
@@ -612,8 +613,58 @@ Notes: [https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https:/
 
 -----
 
+## Using Python to Work With Excel Spreadsheets
+#### Python libraries for working with Excel spreadsheets 
 
 
+There are several Python libraries that are very useful for working with Excel spreadsheets. 
+- OpenPyXL  
+- XlsxWriter
+- XLTable
+- Pandas
+- xlrd and xlwt
+
+One of these libraries is **OpenPyXL**.
+Helpful links for using OpenPyXL:  
+https://www.pyxll.com/blog/tools-for-working-with-excel-and-python/   
+https://openpyxl.readthedocs.io/en/stable/tutorial.html  
+
+
+
+#### Example Python program to access and change an Excel spreadsheet
+
+```python
+import openpyxl
+# Open the spreadsheet
+wb = openpyxl.load_workbook('PythonTest.xlsx')
+# Print the sheet names in the spreadsheet
+print(wb.sheetnames)
+# Assign the 3rd sheet (by name) to an object
+sheet =  wb['Sheet3']
+print(sheet)
+print(sheet.title)
+
+# Create a new spreadsheet
+# Assign the first sheet by name to an object
+sheet = wb['Sheet1']
+# Display the sheet information
+print('Sheet A1 =  ', sheet['A1'])
+# Display the value in cell A1
+print('A1.value = ', sheet['A1'].value)
+# Display the B column (column 2) values in a loop
+print('\nB  Value')
+for i in range(1, 5):
+    print('B'+ str(i), sheet.cell(row=i, column=2).value)
+
+# Change the value in B2
+sheet['B2'] = 5
+
+# Save the updated spreadsheet to a new spreadsheet
+wb.save('example_copy.xlsx')
+print('Save to example_copy.xlsx Done.')
+```
+
+-----
 ## Django, Falcon, and Flask! Oh my! - An Overview of Full Stack
 <br /><br /><br /><br /><br />
 ###### Content in part from https://www.fullstackpython.com.  A great resource for information on web frameworks.
