@@ -619,7 +619,6 @@ Homework is 19.1
 ## Using Python to Work With Excel Spreadsheets
 ##### Python libraries for working with Excel spreadsheets 
 
-
 There are several Python libraries that are very useful for working with Excel spreadsheets. 
 - OpenPyXL  
 - XlsxWriter
@@ -638,6 +637,7 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 ##### Example Python program to access and change an Excel spreadsheet
 
 ```python
+# excelopenpyxl.py
 import openpyxl
 # Open the spreadsheet
 wb = openpyxl.load_workbook('PythonTest.xlsx')
@@ -666,9 +666,26 @@ sheet['B2'] = 5
 # Save the updated spreadsheet to a new spreadsheet
 wb.save('example_copy.xlsx')
 print('Save to example_copy.xlsx Done.')
+
 ```
 
+Output from excelopenpyxl.py
+
+['Sheet1', 'Sheet2', 'Sheet3']
+<Worksheet "Sheet3">
+Sheet3
+Sheet A1 =   <Cell 'Sheet1'.A1>
+A1.value =  NAME
+B  Value
+B1 SEMESTER
+B2 4
+B3 6
+B4 4
+Save to example_copy.xlsx Done.
+
 -----
+
+
 
 
 ## Django, Falcon, and Flask! Oh my! - An Overview of Full Stack
