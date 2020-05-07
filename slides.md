@@ -611,7 +611,9 @@ Notes: [https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https:/
  
 -----
 
+
 Homework is 19.1
+
 
 -----
 
@@ -626,12 +628,12 @@ There are several Python libraries that are very useful for working with Excel s
 - Pandas
 - xlrd and xlwt
 
-One of these libraries is **OpenPyXL**.
+One of these libraries is **OpenPyXL** 
+
 Helpful links for using OpenPyXL:  
 https://www.pyxll.com/blog/tools-for-working-with-excel-and-python/   
 https://openpyxl.readthedocs.io/en/stable/tutorial.html  
-
-
+    
 +++++
 
 ##### Example Python program to access and change an Excel spreadsheet
@@ -669,8 +671,9 @@ print('Save to example_copy.xlsx Done.')
 
 ```
 
-Output from excelopenpyxl.py
+Output from excelopenpyxl.py:
 
+```python
 ['Sheet1', 'Sheet2', 'Sheet3']
 <Worksheet "Sheet3">
 Sheet3
@@ -682,6 +685,8 @@ B2 4
 B3 6
 B4 4
 Save to example_copy.xlsx Done.
+
+```
 
 -----
 
