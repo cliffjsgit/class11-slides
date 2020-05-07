@@ -633,12 +633,12 @@ There are several Python libraries that are very useful for working with Excel s
 -- An alternative package for writing data, formatting information and, in particular, charts in the Excel 2010 format (ie: .xlsx).   
 - XLTable   
 -- API for writing tabular data and charts to Excel. It uses other packages as a back end to write the Excel files.   
-- xlrd and xlwt (or combined xlutils) 
--- xlrd package is for reading data and formatting information from older Excel files.
--- xlwt package is for writing data and formatting information to older Excel files.
-
+- xlrd and xlwt (or combined xlutils)    
+-- xlrd package is for reading data and formatting information from older Excel files.      
+-- xlwt package is for writing data and formatting information to older Excel files.   
+   
 One of these libraries is **OpenPyXL**    
-
+   
 Helpful links for using OpenPyXL:     
 https://www.pyxll.com/blog/tools-for-working-with-excel-and-python/        
 https://openpyxl.readthedocs.io/en/stable/tutorial.html        
@@ -694,12 +694,11 @@ B2 4
 B3 6
 B4 4
 Save to example_copy.xlsx Done.
-
+-----
 ```
 
------
 
-
++++++
 
 
 ## Django, Falcon, and Flask! Oh my! - An Overview of Full Stack
