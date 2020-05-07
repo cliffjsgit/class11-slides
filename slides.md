@@ -8,7 +8,7 @@ revealOptions:
 ---
 
 ### ITSE-1042 Intermediate Python
-<span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 11: Chapter 19: The Goodies / Web Frameworks</span>
+<span style="font-family:Helvetica Neue; font-weight:bold; color:#e49436">Class 11: Chapter 19: The Goodies / Working With Excel Spreadsheets</span>
 <br /><br />
 
 -----
@@ -269,6 +269,7 @@ def subtract(d1, d2):
 Note:
 For example, **set subtraction is available as a method called difference or as an operator, -**. So we can rewrite subtract like this. 
 **The result is a set instead of a dictionary, but for operations like iteration, the behavior is the same.
+
 
 +++++
 
@@ -608,32 +609,40 @@ Video: [https://www.youtube.com/watch?v=OSGv2VnC0go](https://www.youtube.com/wat
 
 Notes: [https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9](https://gist.github.com/0x4D31/f0b633548d8e0cfb66ee3bea6a0deff9)
  
- 
++++++
+
 -----
 
 
 Homework is 19.1
 
 
++++++
 -----
 
 
-## Using Python to Work With Excel Spreadsheets
+## Using Python to Process Excel Spreadsheets
 ##### Python libraries for working with Excel spreadsheets 
 
-There are several Python libraries that are very useful for working with Excel spreadsheets. 
-- OpenPyXL  
-- XlsxWriter
-- XLTable
-- Pandas
-- xlrd and xlwt
+There are several Python libraries that are very useful for working with Excel spreadsheets:   
+- OpenPyXL   
+-- The recommended package for reading and writing Excel 2010 files.   
+- Pandas   
+-- Built on NumPy and provides easy-to-use data structures and data analysis tools for Python.   
+- XlsxWriter   
+-- An alternative package for writing data, formatting information and, in particular, charts in the Excel 2010 format (ie: .xlsx).   
+- XLTable   
+-- API for writing tabular data and charts to Excel. It uses other packages as a back end to write the Excel files.   
+- xlrd and xlwt (or combined xlutils) 
+-- xlrd package is for reading data and formatting information from older Excel files.
+-- xlwt package is for writing data and formatting information to older Excel files.
 
-One of these libraries is **OpenPyXL** 
+One of these libraries is **OpenPyXL**    
 
-Helpful links for using OpenPyXL:  
-https://www.pyxll.com/blog/tools-for-working-with-excel-and-python/   
-https://openpyxl.readthedocs.io/en/stable/tutorial.html  
-    
+Helpful links for using OpenPyXL:     
+https://www.pyxll.com/blog/tools-for-working-with-excel-and-python/        
+https://openpyxl.readthedocs.io/en/stable/tutorial.html        
+       
 +++++
 
 ##### Example Python program to access and change an Excel spreadsheet
